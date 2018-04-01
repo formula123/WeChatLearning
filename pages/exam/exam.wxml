@@ -1,0 +1,19 @@
+<!--pages/exam/exam.wxml-->
+<view wx:for="{{questions}}" wx:for-item="questionItem" wx:for-index='questionIndex'>
+  <text>{{questionIndex+1}}.{{questionItem.question}}</text>
+  <radio-group class="radio-group" bindchange='radioChange'>
+    <label class="answer" wx:for="{{questionItem.answer}}">
+      <view wx:if='{{showCorrect}}'>
+        <view class='correctAnswer' wx:if='{{questionItem.correctAnswer === index}}'>
+          <radio value='{{questionIndex+":"+index}}'
+                 checked='{{questionItem.chooseAnswer == index}}'>{{item}}</radio>
+        </view>
+        <radio wx:else value='{{questionIndex+":"+index}}'>{{item}}</radio>
+      </view>
+      <view wx:else>
+        <radio value='{{questionIndex+":"+index}}'>{{item}}</radio>
+      </view>
+    </label>
+  </radio-group>
+</view>
+<button type='primary' bindtap='submitCheck'>提交</button>

@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/exam/exam",
+    "pages/ask/ask",
+    "pages/logs/logs",
+    "pages/feedback/feedback"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "list":[{
+      "pagePath":"pages/index/index",
+      "iconPath":"Resources/Images/index.png",
+      "selectedIconPath":"Resources/Images/indexSelected.png",
+      "text":"首页"
+    },{
+      "pagePath":"pages/ask/ask",
+      "iconPath": "Resources/Images/ask.png",
+      "selectedIconPath": "Resources/Images/askSelected.png",
+      "text":"问一问"
+    },{
+      "pagePath":"pages/exam/exam",
+      "iconPath": "Resources/Images/exam.png",
+      "selectedIconPath": "Resources/Images/examSelected.png",
+      "text":"考一考"
+    },{
+      "pagePath":"pages/feedback/feedback",
+      "iconPath": "Resources/Images/feedback.png",
+      "selectedIconPath": "Resources/Images/feedbackSelected.png",
+      "text":"向我反馈"
+    }]
+  }
+}

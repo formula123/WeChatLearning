@@ -1,0 +1,4 @@
+/* pages/exam/exam.wxss */
+.correctAnswer {
+  background: orangered;
+}

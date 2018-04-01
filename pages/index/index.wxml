@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="page">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="300" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='weui-article'>
+    <view class='weui-article__h1'>什么是二级库?</view>
+    <view class='weui-article__p'>
+      二级库是指各科室、病区在医院物资一级库领用材料后形成的库存,通过设立二级库,将医院物资管理的触角下沉到科室 ,实现了物资的计划、采购、领用、使用及收费的全过程管理。在现代化门诊药房建设中二级库的使用是药品精细化管理的重要一环。
+    </view>
+    <view class='weui-article__h1'>为什么使用二级库？</view>
+      <view class="weui-article__title">使用二级库具有以下作用：</view>
+        <view class="weui-article__p">1.由之前“人找药，变为药找人”，减轻医务工作者压力。
+        </view>
+        <view class="weui-article__p">2.批号管理，保证批号在前先出，防止药品过期</view>
+        <view class="weui-article__p">3.库存管理，二级库实时记录药品库存，详细记录每次出库、入库操作</view>
+        <view class="weui-article__p">4.提升场地利用率，单个二级库最大化利用医院空间，特别适合老院改造</view>
+        <view class="weui-article__p">5.与其他摆药机联动，二级库可以第三方摆药机通信，摆药机缺库存只需在界面轻轻一点就可以在二级库上生成订单，提供药房系统一体化解决方案</view>
+    <view class='weui-article__h1'>哪家公司二级库做得好？</view>
+    <view class="weui-article__p">
+      作为中国自动化药房技术的领导品牌，苏州艾隆科技股份有限公司研发生产智能机械手二级库，很好满足医院需求，成功应用于苏州大学附属第一人民医院，苏州科技城医院，南通第一人民医院，中国科学技术大学附属医院（前称安徽省立医院）。欢迎各位医院领导来艾隆参观。
+    </view>
+  </view>
+</view>

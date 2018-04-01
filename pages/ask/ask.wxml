@@ -1,0 +1,17 @@
+<!--pages/ask/ask.wxml-->
+<!-- <template name="qTemplate">
+  <view class='question'>
+    <text>{{question}}</text>
+  </view>
+  <view class='answer'>
+    <text>{{answer}}</text>
+  </view>
+</template> -->
+<view wx:for="{{questions}}">
+  <view class='page__title'>
+    <text>{{item.question}}</text>
+  </view>
+  <view class='page__desc' wx:for="{{item.answer}}">
+    <text>{{index + 1}}.{{item}}</text>
+  </view>
+</view>
